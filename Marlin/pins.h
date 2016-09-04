@@ -851,6 +851,16 @@
     #endif
   #endif //ULTRA_LCD
 
+#ifdef RAMPS_ROYSTON
+#if HEATER_BED_PIN==8
+#define HEATER_BED_PIN 58
+#else
+#error Was expecting bed pin to be 8
+#endif
+
+//#define CONTROLLERFAN_PIN  8
+#endif
+
 #else // RAMPS_V_1_1 or RAMPS_V_1_2 as default (BOARD_RAMPS_OLD)
 
 #define X_STEP_PIN         26
