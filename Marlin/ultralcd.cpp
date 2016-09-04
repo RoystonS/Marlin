@@ -430,7 +430,7 @@ static void lcd_tune_menu()
     MENU_ITEM_EDIT(int3, MSG_NOZZLE2, &target_temperature[2], 0, HEATER_2_MAXTEMP - 15);
 #endif
 #if TEMP_SENSOR_BED != 0
-    MENU_ITEM_EDIT(int3, MSG_BED, &target_temperature_bed, 0, BED_MAXTEMP - 15);
+    MENU_ITEM_EDIT(int3, MSG_BED, &target_temperature_bed, 0, BED_MAXTEMP - 10);
 #endif
     MENU_ITEM_EDIT(int3, MSG_FAN_SPEED, &fanSpeed, 0, 255);
     MENU_ITEM_EDIT(int3, MSG_FLOW, &extrudemultiply, 10, 999);
@@ -773,7 +773,7 @@ static void lcd_control_temperature_menu()
     START_MENU();
     MENU_ITEM(back, MSG_CONTROL, lcd_control_menu);
 #if TEMP_SENSOR_0 != 0
-    MENU_ITEM_EDIT(int3, MSG_NOZZLE, &target_temperature[0], 0, HEATER_0_MAXTEMP - 15);
+    MENU_ITEM_EDIT(int3, MSG_NOZZLE, &target_temperature[0], 0, HEATER_0_MAXTEMP - 5);
 #endif
 #if TEMP_SENSOR_1 != 0
     MENU_ITEM_EDIT(int3, MSG_NOZZLE1, &target_temperature[1], 0, HEATER_1_MAXTEMP - 15);
@@ -782,7 +782,7 @@ static void lcd_control_temperature_menu()
     MENU_ITEM_EDIT(int3, MSG_NOZZLE2, &target_temperature[2], 0, HEATER_2_MAXTEMP - 15);
 #endif
 #if TEMP_SENSOR_BED != 0
-    MENU_ITEM_EDIT(int3, MSG_BED, &target_temperature_bed, 0, BED_MAXTEMP - 15);
+    MENU_ITEM_EDIT(int3, MSG_BED, &target_temperature_bed, 0, BED_MAXTEMP - 10);
 #endif
     MENU_ITEM_EDIT(int3, MSG_FAN_SPEED, &fanSpeed, 0, 255);
 #if defined AUTOTEMP && (TEMP_SENSOR_0 != 0)
