@@ -27,9 +27,9 @@
 #define EN_B (1<<BLEN_B)
 #define EN_C (1<<BLEN_C)
 #define encrot0 0
-#define encrot1 2
+#define encrot1 1
 #define encrot2 3
-#define encrot3 1
+#define encrot3 2
 #define LCD_CLICKED (buttons&EN_C)
 #endif
 
