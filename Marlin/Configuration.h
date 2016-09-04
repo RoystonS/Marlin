@@ -152,6 +152,9 @@
 //#define EXTRUDER_WATTS (12.0*12.0/6.7) //  P=I^2/R
 //#define BED_WATTS (12.0*12.0/1.1)      // P=I^2/R
 
+// Royston: don't hardcode the PID overmax temperature
+#define PID_AUTOTUNE_OVERMAX 30
+
 // PID settings:
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
