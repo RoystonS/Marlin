@@ -184,6 +184,9 @@
 #if ANY_THERMISTOR_IS(1000) // Custom
   const short temptable_1000[][2] PROGMEM = { { 0, 0 } };
 #endif
+#if ANY_THERMISTOR_IS(900)
+  #include "thermistor_900.h"
+#endif
 
 #define _TT_NAME(_N) temptable_ ## _N
 #define TT_NAME(_N) _TT_NAME(_N)
