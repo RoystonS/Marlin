@@ -489,9 +489,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  //#define DEFAULT_Kp 22.2
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -502,6 +502,11 @@
   //#define DEFAULT_Kp 63.0
   //#define DEFAULT_Ki 2.25
   //#define DEFAULT_Kd 440
+
+  // Hypercube
+  #define DEFAULT_Kp 17.54
+  #define DEFAULT_Ki 0.90
+  #define DEFAULT_Kd 85.35
 
 #endif // PIDTEMP
 
@@ -551,9 +556,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define  DEFAULT_bedKp 676.66
-  #define  DEFAULT_bedKi 132.38
-  #define  DEFAULT_bedKd 864.68
+  #define  DEFAULT_bedKp 158.67
+  #define  DEFAULT_bedKi 23.04
+  #define  DEFAULT_bedKd 728.48
 #endif // PIDTEMPBED
 #if EITHER(PIDTEMP, PIDTEMPBED)
   //#define PID_DEBUG             // Sends debug data to the serial port. Use 'M303 D' to toggle activation.
