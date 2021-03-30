@@ -451,7 +451,7 @@
 
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
-#define HEATER_0_MINTEMP   5
+#define HEATER_0_MINTEMP   2
 #define HEATER_1_MINTEMP   5
 #define HEATER_2_MINTEMP   5
 #define HEATER_3_MINTEMP   5
@@ -459,7 +459,7 @@
 #define HEATER_5_MINTEMP   5
 #define HEATER_6_MINTEMP   5
 #define HEATER_7_MINTEMP   5
-#define BED_MINTEMP        5
+#define BED_MINTEMP        -3
 #define CHAMBER_MINTEMP    5
 
 // Above this temperature the heater will be switched off.
@@ -511,9 +511,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // Hypercube
-    #define DEFAULT_Kp 17.54
-    #define DEFAULT_Ki 0.90
-    #define DEFAULT_Kd 85.35
+    #define DEFAULT_Kp 15.75
+    #define DEFAULT_Ki 1.07
+    #define DEFAULT_Kd 57.75
   #endif
 #endif // PIDTEMP
 
@@ -557,9 +557,9 @@
   //#define DEFAULT_bedKd 305.4
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define  DEFAULT_bedKp 158.67
-  #define  DEFAULT_bedKi 23.04
-  #define  DEFAULT_bedKd 728.48
+  #define  DEFAULT_bedKp 323.41
+  #define  DEFAULT_bedKi 53.76
+  #define  DEFAULT_bedKd 1297.08
 #endif // PIDTEMPBED
 
 //===========================================================================
